@@ -1,0 +1,11 @@
+MERN stack (MongoDB, Express, React, and Node.js) which is a popular web development stack used to build full-stack web applications. Docker is a containerization platform that allows you to package and deploy applications as containers. GitHub is a web-based version control system used for software development.
+
+Using Docker with MERN stack can help you to streamline the development and deployment process. Here are the general steps you can follow to use Docker and GitHub with MERN stack:
+
+Set up development environment: Install Docker and configure the development environment with the necessary tools, that are Node.js, MongoDB, Express and React.
+Create a Dockerfile: Create a Dockerfile that specifies the dependencies and configuration required for MERN stack application.
+Build a Docker image: Build a Docker image from the Dockerfile using the Docker CLI. This image will contain the application and its dependencies.
+Push code to GitHub: Create a repository on GitHub and push code to it. This will allow us to keep track of changes and collaborate with other developers.
+Set up a continuous integration (CI) pipeline: Set up a CI pipeline using a tool like Jenkins or CircleCI. This will automate the build and testing process, ensuring that the code is working correctly before it is deployed
+Deploy your application: Deploy the application to a server or cloud platform like AWS using Docker.
+Overall, using Docker and GitHub with MERN stack can make the development and deployment process more efficient and reliable.
