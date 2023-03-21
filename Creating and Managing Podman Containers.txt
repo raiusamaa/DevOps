@@ -1,0 +1,66 @@
+Creating and Managing Podman Containers
+Podman is a lightweight, fast, and powerful container engine that is an alternative to Docker. It is open-source and provides the ability to create, run, and manage containers in a secure and efficient manner. Podman is gaining popularity in the containerization industry because it is daemonless, which means that it does not require a background process to run.
+
+In this blog, we will cover the process of creating and managing containers using Podman. We will cover the following topics:
+
+Installing Podman
+Creating a container with Podman
+Running a container with Podman
+Stopping a container with Podman
+Removing a container with Podman
+Managing containers with Podman
+Conclusion
+Installing Podman:
+Before creating and managing containers with Podman, we need to install Podman on system. Podman is available for many Linux distributions, including CentOS, Fedora, Debian, and Ubuntu.
+
+To install Podman on Ubuntu, you can use the following command:
+
+sudo apt-get install podman
+
+Creating a container with Podman:
+To create a container with Podman, you first need to create an image. You can create an image using a Dockerfile or by pulling an image from a container registry.
+For example, to create an image from a Dockerfile, use the following command:
+podman build -t my-image:latest .
+
+This command builds an image named “my-image” with the “latest” tag from the current directory. You can replace “my-image” with your desired image name.
+
+After creating an image, you can create a container from it using the following command:
+podman run -d — name my-container my-image:latest
+This command creates a container named “my-container” from the “my-image” image with the “latest” tag.
+
+Running a container with Podman:
+To start a container with Podman, use the following command:
+podman start my-container
+
+This command starts the “my-container” container. You can replace “my-container” with your container name.
+
+You can also run a container in the foreground with the following command:
+podman run -it — name my-container my-image:latest
+
+This command runs the “my-container” container in the foreground with an interactive terminal. You can replace “my-container” with your container name.
+
+Stopping a container with Podman:
+To stop a running container with Podman, use the following command:
+podman stop my-container
+
+This command stops the “my-container” container. You can replace “my-container” with your container name.
+
+Removing a container with Podman:
+To remove a container with Podman, use the following command:
+podman rm my-container
+
+This command removes the “my-container” container. You can replace “my-container” with your container name.
+
+You can also remove all stopped containers with the following command:
+
+podman container prune
+
+This command removes all stopped containers.
+
+Managing containers with Podman:
+Podman provides various commands to manage containers, such as viewing container logs, inspecting containers, and attaching to a running container’s console.
+
+For example, to view the logs of a container, use the following command:
+podman logs my-container
+
+This command displays the logs of the “my-container” container. You can replace “my-container” with your container name.
